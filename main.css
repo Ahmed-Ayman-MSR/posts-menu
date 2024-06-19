@@ -1,0 +1,114 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .grid {
+    background-color: #ddd;
+    padding: 20px;
+    width: 100vw;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(4, 24%);
+    grid-template-areas: 
+    "osama osama osama osama osama osama ahmed ahmed ahmed shady shady shady"
+    "mohamed mohamed mohamed mahmoud mahmoud mahmoud mahmoud mahmoud mahmoud shady shady shady"
+    "mohamed mohamed mohamed ezz ezz ezz ezz ezz ezz shady shady shady"
+    "mo mo mo ib ib ib ga ga ga em em em";
+    gap: 8px;
+  }
+  
+  .grid div {
+    display: flex;
+    border-bottom: #ff3d00 solid 2px;
+    padding: 10px;
+    flex-direction: column;
+    gap: 10px;
+    line-height: 1.2;
+  }
+  
+  .osama {
+    grid-area: osama;
+    background-color: white;
+  }
+  
+  .ahmed {
+    grid-area: ahmed;
+    background-color: white;
+  }
+  
+  .shady {
+    grid-area: shady;
+    background-color: black;
+    color: white;
+  }
+  
+  .mohamed {
+    grid-area: mohamed;
+    background-color: white;
+  }
+  
+  .mahmoud {
+    grid-area: mahmoud;
+    background-color: black;
+    color: white;
+  }
+  
+  .ezz {
+    grid-area: ezz;
+    background-color: white;
+  }
+  
+  .mo-s {
+    grid-area: mo;
+    background-color: white;
+  }
+  
+  .ib-s {
+    grid-area: ib;
+    background-color: black;
+    color: white;
+  }
+  
+  .ga-s {
+    grid-area: ga;
+    background-color: white;
+  }
+  
+  .em-s {
+    grid-area: em;
+    background-color: white;
+  }
+  
+  .main-p {
+    font-weight: bolder;
+    font-size: 14px;
+  }
+  
+  .sub-p {
+    font-size: 12px;
+    white-space: wrap;
+    overflow: hidden;
+    display: inline-block;
+    line-height: normal;
+    word-wrap: wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .job {
+    color: #a8b0c7;
+    font-size: 10px;
+    font-weight: bolder;
+    gap: 3px;
+  }
+  
+  h4 {
+    font-size: 14px;
+  }
+  
